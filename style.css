@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    text-align: center;
+    text-align: center; /* Canh giữa nội dung */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -39,4 +39,8 @@ button:hover {
     margin-top: 20px;
     font-size: 18px;
     color: #28a745;
+}
+
+h2 {
+    margin: 0; /* Để không có khoảng cách bên trên câu hỏi */
 }
