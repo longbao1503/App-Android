@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng đếm bước chân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Đếm bước chân</h1>
+        <div class="counter">
+            <p>Số bước hôm nay: <span id="stepCount">0</span></p>
+            <button id="addStepBtn">+1 Bước</button>
+        </div>
+        <div class="goal">
+            <label for="goalInput">Đặt mục tiêu hàng ngày: </label>
+            <input type="number" id="goalInput" placeholder="Nhập mục tiêu">
+            <button id="setGoalBtn">Đặt mục tiêu</button>
+            <p>Mục tiêu: <span id="goalCount">Chưa có</span></p>
+        </div>
+        <div class="message" id="goalMessage"></div>
+        <button id="resetBtn">Đặt lại bước chân</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
