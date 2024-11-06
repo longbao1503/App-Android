@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    text-align: center; /* Canh giữa nội dung */
+    text-align: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -17,13 +17,13 @@ body {
     max-width: 400px;
 }
 
-h1 {
+h1, h2 {
     color: #333;
 }
 
 button {
     padding: 10px 20px;
-    margin-top: 20px;
+    margin: 10px;
     background-color: #28a745;
     color: white;
     border: none;
@@ -35,12 +35,26 @@ button:hover {
     background-color: #218838;
 }
 
-#result {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #28a745;
+.answer-buttons button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #007bff;
 }
 
-h2 {
-    margin: 0; /* Để không có khoảng cách bên trên câu hỏi */
+button.correct {
+    background-color: #28a745;
+}
+
+button.wrong {
+    background-color: #dc3545;
+}
+
+#scoreDisplay {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#scoreHistory {
+    display: none;
 }
