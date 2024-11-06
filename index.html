@@ -8,11 +8,35 @@
 </head>
 <body>
     <div class="container">
-        <h1>Trắc Nghiệm</h1>
-        <div id="quiz"></div>
-        <button id="submitBtn">Gửi</button>
-        <div id="result"></div>
+        <div id="startScreen">
+            <h1>Chào mừng đến với Trắc Nghiệm</h1>
+            <button id="startBtn">Chơi game</button>
+            <button id="exitBtn">Thoát</button>
+            
+            <button id="toggleHistoryBtn" onclick="loadScoreHistory()">Lịch Sử Điểm Số</button>
+            <div id="scoreHistory">
+                <h3>Lịch sử điểm số</h3>
+                <ul id="scoreList"></ul>
+            </div>
+            
+            <div id="scoresContainer"></div>
+        </div>
+       
+        <div id="quizScreen" style="display: none;">
+            <h2 id="questionText">Câu hỏi</h2>
+            <div id="answerButtons" class="answer-buttons"></div>
+            <div id="scoreDisplay">Điểm: <span id="score">0</span></div>
+            <button id="nextBtn" style="display: none;">Câu tiếp theo</button>
+        </div>
+
+        <div id="resultScreen" style="display: none;">
+            <h2>Trò chơi kết thúc!</h2>
+            <p id="finalScore"></p>
+            <button id="restartBtn">Chơi lại</button>
+            <button id="homeBtn">Màn hình chính</button>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
